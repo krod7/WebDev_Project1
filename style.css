@@ -38,9 +38,7 @@
 
 
 .logoImage{
-    animation: spin 4s infinite ease-in-out alternate;
     height: 50px;
-    width: 50px;
     object-fit: contain;
-    border-radius: 50%;
+    animation: spin 4s infinite ease-in-out alternate;
 }
