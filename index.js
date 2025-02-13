@@ -20,29 +20,6 @@ async function fetchCryptoData(){
       updateCryptoList(data);
 }
 
-/*
-function updateCryptoList(CryptoData){
-    const container = document.querySelector("#allCryptoContainer");
-
-
-    CryptoData.forEach((coin) => {
-        const cryptoRow = document.createElement("a");
-        cryptoRow.classList.add("SingleCryptoContainer");
-        const priceChange = coin.delta.day.toFixed(2);
-        const changeClass = priceChange > 0 ? "positive" : "negative";
-
-        cryptoRow.innerHTML = `
-            <div><img class="logoImage" src="${coin.png64}"></div>
-            <div>${coin.name}</div>
-            <div> calss="PriceContainer">
-            <div>$${coin.rate.toFixed(2)}</div>
-            <div class="priceChangeColumn ${changeClass}"</div>
-            </div>`
-
-            container.appendChild(cryptoRow);
-    });
-}
-*/
 function updateCryptoList(CryptoData){
     const container = document.querySelector("#allCryptoContainer");
 
