@@ -50,7 +50,8 @@ function updateCryptoList(CryptoData){
         const cryptoRow = document.createElement("a");
         cryptoRow.classList.add("SingleCryptoContainer");
 
-        const priceChange = coin.delta.day.toFixed(2);
+        //const priceChange = coin.delta.day.toFixed(2);
+        const priceChange = Number(coin.delta.day.toFixed(2));
         const changeClass = priceChange > 0 ? "positive" : "negative";
         const changeSymbol = priceChange > 0 ? "▲" : "▼"; // Green up arrow for increase, red down arrow for decrease
 
